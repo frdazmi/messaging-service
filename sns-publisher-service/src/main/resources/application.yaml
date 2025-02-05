@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: sns-publisher-service
+
+aws:
+  accessKeyId: ${AWS_ACCESS_KEY_ID}
+  secretKey: ${AWS_SECRET_ACCESS_KEY}
+  localstack:
+    endpoint: http://localhost:4566
+  sns:
+    topicArn: arn:aws:sns:us-east-1:000000000000:event_topic-30862f0d # Replace with your generated topic ARN

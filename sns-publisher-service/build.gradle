@@ -1,0 +1,10 @@
+plugins {
+    id 'org.springframework.boot' version "${springBootVersion}"
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    implementation "software.amazon.awssdk:sns:${awsSdkVersion}"
+    implementation project(":aws-sns-sdk")
+}
