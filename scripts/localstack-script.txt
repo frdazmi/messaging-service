@@ -1,0 +1,5 @@
+[Start localstack]
+SERVICES=s3,sqs,sns localstack start -d
+
+[Create bucket for terraform state]
+aws --endpoint-url=http://localhost:4566 s3 mb s3://terraform-state
