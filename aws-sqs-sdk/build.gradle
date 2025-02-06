@@ -1,0 +1,5 @@
+dependencies {
+    implementation "software.amazon.awssdk:core:${awsSdkVersion}"
+    implementation "software.amazon.awssdk:sqs:${awsSdkVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+}
