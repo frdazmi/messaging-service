@@ -1,0 +1,12 @@
+plugins {
+    id 'org.springframework.boot' version "${springBootVersion}"
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+    implementation "software.amazon.awssdk:core:${awsSdkVersion}"
+    implementation "software.amazon.awssdk:sqs:${awsSdkVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+
+    implementation project(":aws-sqs-sdk")
+}
